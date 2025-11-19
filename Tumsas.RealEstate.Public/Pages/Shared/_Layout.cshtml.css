@@ -1,0 +1,206 @@
+﻿/* ==========================================
+   ELITE REALTOR - LAYOUT CSS
+   Styles ONLY for _Layout.cshtml
+   ========================================== */
+
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* ==========================================
+   TOP NAVIGATION BAR
+   ========================================== */
+.er-topbar {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.er-topbar-inner {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.er-brand a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0078ff;
+    text-decoration: none;
+}
+
+.er-topnav a {
+    margin-left: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333;
+}
+
+    .er-topnav a:hover {
+        color: #0078ff;
+    }
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+.er-hero-carousel {
+    height: 500px;
+    background: url('/images/hero-modern.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.er-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.er-slide-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px 60px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+    .er-slide-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+    }
+
+    .er-slide-content p {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+
+.er-btn-primary {
+    padding: 12px 30px;
+    background: #0078ff;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+    .er-btn-primary:hover {
+        background: #005fcc;
+    }
+
+/* ==========================================
+   FEATURED NAVIGATION CARDS
+   ========================================== */
+.er-featured-nav {
+    background: #fff;
+}
+
+.er-card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.er-card {
+    width: 230px;
+    background: #f9f9f9;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+    .er-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .er-card i {
+        font-size: 2rem;
+        color: #0078ff;
+        margin-bottom: 10px;
+    }
+
+    .er-card h3 {
+        margin-top: 10px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+.er-main-content {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* ==========================================
+   FOOTER GRID
+   ========================================== */
+.er-footer-grid {
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.er-footer-section h4 {
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+
+.er-footer-section ul {
+    list-style: none;
+}
+
+    .er-footer-section ul li {
+        margin-bottom: 8px;
+    }
+
+        .er-footer-section ul li a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+            .er-footer-section ul li a:hover {
+                color: #0078ff;
+            }
+
+.er-social-icons a {
+    margin-right: 15px;
+    font-size: 1.3rem;
+    color: #ccc;
+    text-decoration: none;
+}
+
+    .er-social-icons a:hover {
+        color: #0078ff;
+    }

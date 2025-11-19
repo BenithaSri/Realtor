@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+@* <!-- HERO OVERRIDE FOR HOMEPAGE (optional remove) -->
+<section class="er-home-hero">
+    <h1>Find Your Perfect Home</h1>
+    <p>Browse luxury homes, rentals, and investment properties.</p>
+    <br />
+    <a asp-page="/Properties/Index" class="er-btn-primary">Start Browsing</a>
+    <br /><br />
+</section> *@
+
+<!-- FEATURED SECTIONS -->
+<section class="er-section">
+    <h2 class="er-section-title">Featured Listings</h2>
+
+    <div class="er-properties-grid">
+
+        <div class="er-property-card">
+            <img src="~/lib/images/sample1.jpg" alt="Home" />
+            <h3>Modern Family House</h3>
+            <p class="er-price">$520,000</p>
+            <p class="er-location"><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+        </div>
+
+        <div class="er-property-card">
+            <img src="~/lib/images/sample1.jpg" alt="Home" />
+            <h3>Luxury Villa</h3>
+            <p class="er-price">$1,250,000</p>
+            <p class="er-location"><i class="fas fa-map-marker-alt"></i> Miami, USA</p>
+        </div>
+
+        <div class="er-property-card">
+            <img src="~/lib/images/sample1.jpg" alt="Home" />
+            <h3>Beachfront Apartment</h3>
+            <p class="er-price">$850,000</p>
+            <p class="er-location"><i class="fas fa-map-marker-alt"></i> Los Angeles, USA</p>
+        </div>
+    </div>
+</section>
+
+<section class="er-section">
+    <h2 class="er-section-title">Why Choose Us?</h2>
+
+    <div class="er-features">
+        <div class="er-feature-box">
+            <i class="fas fa-award"></i>
+            <h4>Top Rated Agents</h4>
+            <p>We bring unmatched expertise and professionalism.</p>
+        </div>
+
+        <div class="er-feature-box">
+            <i class="fas fa-home"></i>
+            <h4>Exclusive Listings</h4>
+            <p>Discover unique properties not available elsewhere.</p>
+        </div>
+
+        <div class="er-feature-box">
+            <i class="fas fa-map"></i>
+            <h4>Local Market Experts</h4>
+            <p>We know the best areas, deals, and opportunities.</p>
+        </div>
+    </div>
+</section>

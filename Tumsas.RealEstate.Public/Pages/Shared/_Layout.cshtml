@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Elite Realtor</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+
+    <!-- =========================
+         TOP NAVIGATION BAR
+         ========================= -->
+    <header class="er-topbar">
+        <div class="er-topbar-inner">
+            <div class="er-brand">
+                <a asp-area="" asp-page="/Index">🏡 Elite Realtor</a>
+            </div>
+
+            <nav class="er-topnav">
+                <a asp-page="/Index">Home</a>
+                <a asp-page="/Properties/Index">Listings</a>
+                <a asp-page="/Agents/Index">Our Agents</a>
+                <a asp-page="/SignIn">Sign In</a>
+                <a asp-page="/SignUp">Sign Up</a>
+                <a asp-page="/Contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =========================
+         HERO SECTION
+         ========================= -->
+    <section class="er-hero-carousel">
+        <div class="er-slide active">
+            <div class="er-slide-content">
+                <h1>Live Where You Love</h1>
+                <p>Explore handpicked homes in top neighborhoods.</p>
+                <a asp-page="/Properties/Index" class="er-btn-primary">View Listings</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         FEATURED NAVIGATION CARDS
+         ========================= -->
+    <section class="er-featured-nav">
+        <div class="er-card-grid">
+
+            <a asp-page="/Properties/Index" class="er-card">
+                <i class="fas fa-home"></i>
+                <h3>Browse Properties</h3>
+            </a>
+
+            <a asp-page="/Agents/Index" class="er-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Meet Our Agents</h3>
+            </a>
+
+            <a asp-page="/Contact" class="er-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Get in Touch</h3>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- =========================
+         MAIN BODY (PAGE CONTENT)
+         ========================= -->
+    <main class="er-main-content">
+        @RenderBody()
+    </main>
+
+    <!-- =========================
+         FOOTER GRID
+         ========================= -->
+    <footer class="er-footer-grid">
+
+        <div class="er-footer-section">
+            <h4>Elite Realtor</h4>
+            <p>&copy; @DateTime.Now.Year All rights reserved.</p>
+        </div>
+
+        <div class="er-footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a asp-page="/Index">Home</a></li>
+                <li><a asp-page="/Properties/Index">Listings</a></li>
+                <li><a asp-page="/Agents/Index">Agents</a></li>
+                <li><a asp-page="/Contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="er-footer-section">
+            <h4>Follow Us</h4>
+            <div class="er-social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

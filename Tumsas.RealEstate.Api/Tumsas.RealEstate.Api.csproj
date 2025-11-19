@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>07fecc1d-caa4-4ad3-81e0-949712549338</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.14">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.20" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<ProjectReference Include="..\Tumsas.RealEstate.Business\Tumsas.RealEstate.Business.csproj" />
+	</ItemGroup>
+
+</Project>

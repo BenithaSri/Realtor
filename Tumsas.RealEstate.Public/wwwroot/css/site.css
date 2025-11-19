@@ -1,0 +1,275 @@
+/* ==========================================
+   ELITE REALTOR - MODERN THEME (FINAL)
+   Clean Replacement for Default site.css
+   ========================================== */
+
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   TOP NAVIGATION BAR
+   ========================================== */
+.er-topbar {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.er-topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.er-brand a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0078ff;
+    text-decoration: none;
+}
+
+.er-topnav a {
+    margin-left: 30px;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    .er-topnav a:hover {
+        color: #0078ff;
+    }
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+.er-hero-carousel {
+    height: 500px;
+    background: url('/images/hero-modern.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.er-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.er-slide-content {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 50px 60px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+    .er-slide-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 15px;
+    }
+
+    .er-slide-content p {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+
+.er-btn-primary {
+    background: #0078ff;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+    .er-btn-primary:hover {
+        background: #005fcc;
+    }
+
+/* ==========================================
+   FEATURED NAVIGATION CARDS
+   ========================================== */
+.er-featured-nav {
+    padding: 60px 30px;
+    background: #fff;
+}
+
+.er-card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.er-card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 220px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+    .er-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .er-card i {
+        font-size: 2rem;
+        color: #0078ff;
+        margin-bottom: 12px;
+    }
+
+    .er-card h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+
+/* ==========================================
+   PROPERTY SECTION - GRID + CARDS
+   ========================================== */
+
+.er-section {
+    padding: 60px 20px;
+}
+
+.er-section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #222;
+}
+
+.er-properties-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.er-property-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+    padding:10px 10px 10px 10px;
+}
+
+    .er-property-card:hover {
+        transform: translateY(-5px);
+    }
+
+.er-property-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.er-property-content {
+    padding: 20px;
+}
+
+.er-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0078ff;
+    margin-top: 10px;
+}
+
+.er-location {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+    .er-location i {
+        margin-right: 6px;
+        color: #0078ff;
+    }
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+.er-main-content {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.er-footer-grid {
+    background: #1a1a1a;
+    color: #ccc;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding: 50px 30px;
+}
+
+.er-footer-section h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.er-footer-section ul {
+    list-style: none;
+}
+
+    .er-footer-section ul li {
+        margin-bottom: 8px;
+    }
+
+        .er-footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+            .er-footer-section ul li a:hover {
+                color: #0078ff;
+            }
+
+.er-social-icons a {
+    margin-right: 15px;
+    color: #ccc;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+    .er-social-icons a:hover {
+        color: #0078ff;
+    }
